@@ -143,10 +143,7 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'eventos/static'),
 ]
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-<<<<<<< HEAD
 
-=======
->>>>>>> e927d9030dc1f26e6a9eae83449fc1c93ea2cdb3
 
 
 # Default primary key field type
