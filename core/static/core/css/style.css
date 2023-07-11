@@ -1,0 +1,361 @@
+* {
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    height: 200vh;
+    position: relative;
+    background-image: url(../img/fondo.jpg);
+    background-position: center center;
+    background-repeat: repeat;
+    background-size: 100% auto;
+    font-family: 'Satisfy', cursive;
+    z-index: -2;
+}
+
+header {
+    background-color: #121212;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+    height: 70px;
+}
+
+.logo-fuerte {
+    width: 80%;
+    margin: 100px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.definiciones {
+    font-family: Forum;
+    justify-content: space-between;
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+.parrafo-defzamar {
+    font-size: 28px;
+    width: 40%;
+    height: 200px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    color: #f2f2f2;
+}
+
+
+.logo {
+    display: flex;
+    width: 100px;
+    height: 60%;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item {
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    color: #f2f2f2;
+    transition: 0.3s;
+    font-family: 'Reem Kufi Ink', sans-serif;
+}
+
+.item:hover {
+    color: #ff2258;
+    transition: 0.3s;
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icono {
+    width: 25px;
+    background-color: #ff2258;
+    border-radius: 30%;
+}
+
+label {
+    cursor: pointer;
+    display: none;
+}
+
+.btn {
+    cursor: pointer;
+    padding: 10px 24px;
+    border-radius: 30px;
+    background-color: #ff2258;
+    color: #f2f2f2;
+    font-weight: 600;
+    transition: 1.5s;
+}
+
+.btn:hover {
+    background-color: #f2f2f2;
+    color: #ff2258;
+    transition: 0.2s;
+}
+
+
+
+footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: .5rem 8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Reem Kufi Ink', sans-serif;
+}
+
+.logo-footer{
+    height: 40px;
+    margin-bottom: 20px;
+    opacity: 0.5;
+    border-radius: 50%;
+}
+
+.social-icons-container, .footer-menu-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 0px;
+}
+
+.social-icon{
+    height:30px;
+    width: 30px;
+    border-radius: 50px;
+    border: 1px solid #f2f2f2;
+    background-image: url(../img/check.png);
+    background-position: center;
+    background-size: 40%;
+    background-repeat: no-repeat;
+    margin: 1rem;
+}
+
+.social-icon:hover{
+    background-color: #121212;
+
+}
+
+.social-icon:nth-last-of-type(3){
+    background-image:url(../img/facebook.png);
+}
+
+.social-icon:nth-last-of-type(2){
+    background-image:url(../img/spotify.png);
+}
+
+.social-icon:nth-last-of-type(1){
+    background-image:url(../img/youtube.png);
+}
+
+.footer-menu-container{
+    color: #f2f2f2;
+    font-size: 10px;
+}
+
+.menu-item{
+    margin: .5rem 1rem;
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+.menu-item:hover{
+    opacity: 1;
+}
+
+.copyright{
+    color: #f2f2f2;
+    opacity: 0.3;
+    text-align: center;
+}
+
+.section-container {
+    border-radius: 30px;
+}
+section {
+    margin: 70px auto 0 auto;
+    display: flex;
+    height: 500px;
+    position: relative;
+}
+
+section img {
+    border-radius: 10px;
+    margin: 0;
+    width: 0;
+    flex-grow: 1.3;
+    object-fit: cover;
+    opacity: .8;
+    transition: 0.5s ease;
+    position: relative;
+    z-index: 0;
+}
+
+.horizontal-list {
+    width: 100%;
+    color: #f2f2f2;
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    object-fit: cover;
+    padding: 0;
+    font-size: 15;
+}
+
+.horizontal-list li {
+    font-family: 'Reem Kufi Ink', sans-serif;
+    margin: 0 35px;
+    width: 10%;
+    text-align: center;
+}
+
+section img:hover {
+    border-radius: 0;
+    margin: 0 5px 0 5px;
+    cursor: crosshair;
+    width: 200px;
+    opacity: 1;
+    filter: contrast(120%);
+}
+
+
+
+.about-principal {
+    opacity: 0;
+    font-family: 'Julius Sans One', sans-serif;
+    color: #ff2258;
+    width: 100%;
+    margin: 40px auto 20px auto;
+}
+
+.formulario-contenedor {
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+}
+.formulario-contacto {
+    width: 60%;
+}
+
+.formulario-contacto input[type="text"],
+.formulario-contacto input[type="email"],
+.formulario-contacto textarea {
+  color: #ff2258;
+  border-radius: 15px;
+  width: 100%;
+  padding: 10px;
+  font-family: Tahoma;
+  font-size: 15px;
+}
+
+.boton-enviar {
+    margin: auto auto 10px auto;
+    width: 100px;
+    justify-content: center;
+    border: 0;
+    background-image: linear-gradient(
+        150deg,
+        #9500ff,
+        #09f,
+        #00DDFF
+    );
+    border-radius: 8px;
+    color: #f2f2f2;
+    display: flex;
+    font-size: 18px;
+    padding: 4px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.boton-enviar:hover {
+    color: #61031a;
+    background-image: linear-gradient(
+        #ff2258,
+        #f2f2f2
+    );
+    transition: 0.5s;
+}
+
+.eventos-principal {
+    margin: 200px 10% auto 10%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.titulo-pagina {
+    color: #ff2258;
+    font-family: 'Julius Sans One', sans-serif;
+}
+
+.contenido-pagina {
+    margin: 100px 100px 100px 100px;
+    color: #f2f2f2;
+    font-family: 'Reem Kufi Ink', sans-serif;
+    justify-content: center;
+}
+
+.titulo-pagina1 {
+    color: #ff2258;
+    font-family: 'Julius Sans One', sans-serif;
+}
+
+.section-container div {
+    width: 70%;
+    margin: 50px auto 50px auto;
+    color: #f2f2f2;
+    font-family: unset;
+    font-size: 20px;
+    text-align: justify;
+}
+
+.foto-panoramica {
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    height: 300px;
+    cursor: crosshair;
+    transition: 0.5s;
+}
+
+.foto-panoramica:hover {
+    height: 383px;
+    filter: contrast(120%);
+}
+
+.nosotros-foot {
+    width: 70%;
+    margin: 60px auto;
+}
+
+.nosotros-foot p {
+    color: #f2f2f2;
+    font-family: cursive;
+    font-size: 40px;
+    text-align: center;
+}

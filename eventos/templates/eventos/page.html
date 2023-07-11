@@ -1,0 +1,37 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% block content %}
+<body style="span {background-color: rgb(0,0,0,0.5)}; color: blanchedalmond;">
+  <div class="contenido-pagina">
+    <span>
+      <h2  class="titulo-pagina1">{{page.title}}</h2>
+    </span>
+    <span class="section-container">
+      <section>
+        <img src="{{ page.image1.url }}" alt="">
+        <img src="{{ page.image2.url }}" alt="">
+        <img src="{{ page.image3.url }}" alt="">
+        <img src="{{ page.image4.url }}" alt="">
+        <img src="{{ page.image5.url }}" alt="">
+      </section>
+      <span>
+        <figure class="foto-panoramica">
+          <img src="{{ page.image6.url }}" alt="">
+        </figure>
+      </span>
+      <div class="contenido">{{page.content}}</div>
+    </span>
+    
+    
+    <span>
+      <ul>
+        <li><a  class="btn" href="{% url 'pages' %}" style="text-decoration: none;">Volver</a></li>
+      </ul>
+    </span>
+  </div>
+</body>
+{% endblock %}
+
+
+
+

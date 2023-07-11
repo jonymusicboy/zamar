@@ -1,0 +1,10 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% block title %}enviado{% endblock %}
+{% block content %}
+    <p style= "margin: 100px; color: #f2f2f2; font-size: 25px;">
+        Mensaje enviado correctamente, nos pondremos en contacto con Usted. Dios le Bendiga!<br><br><br><br>
+        <a  class="item" href="{% url 'home' %}">Volver</a>
+    </p>
+    
+{% endblock %}

@@ -1,0 +1,26 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% block content %}
+<title>Eventos</title>
+
+  <div class="eventos-principal">
+    {% for page in pages %}
+      <div>
+        <div>
+          <h2 class="titulo-pagina">{{page.title}}</h2>
+          <div>
+            <div class="link-mas"><a class="btn" style="text-decoration: none;" href="{% url 'page' page.id page.title|slugify %}" >Ver Evento</a>
+              <!--
+              {% if request.user.is_staff %}
+                | <a href="#">Editar</a>
+                | <a href="#">Borrar</a>
+              {% endif %}
+              -->
+            </div>
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+
+{% endblock %}
